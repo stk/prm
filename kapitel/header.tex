@@ -1,0 +1,76 @@
+%
+% Headerdatei der Diplomarbeit
+%
+%
+
+\documentclass[
+        %pdftex,
+		a4paper,
+		12pt,
+		%oneside,
+		%openright,
+        %openany, % gegenteil von openright, seite beliebig beginnen, kein effekt bei 'oneside'
+		%halfparskip,
+%		draft,
+%		chapterprefix,%       Kapitel anschreiben als Kapitel
+]{scrartcl}
+
+\usepackage{moreverb}
+
+%
+% Package für Farben im PDF
+%
+\usepackage{color}
+
+%Deutsche Trennungen, Anführungsstriche und mehr:
+\usepackage{german, ngerman}
+\usepackage[german]{babel}
+%\usepackage[babel,german=quotes]{csquotes}
+%Eingabe von ü,ä,ö,ß erlauben
+\usepackage[latin1]{inputenc}
+
+%Zum Einbinden von Grafiken
+\usepackage{graphicx}
+
+%zum benutzen von ps in pdf
+\usepackage{ps4pdf}
+
+%Zum malen von bildern
+\PSforPDF{
+\usepackage{texdraw}
+}
+
+%Ein Paket, das die Darstellung von "Text, wie er eingegeben wird"
+%erlaubt: Also
+%\begin{verbatim} \end{document}\end{verbatim} erzeugt die Ausgabe von
+%\end{document} im Typewrites-Style und beendet nicht das Dokument.
+\usepackage{verbatim}
+%\usepackage{moreverb}
+
+%Source-Code printer for LaTeX
+\usepackage{listings}
+
+%Darstellung des Glossars einstellen
+%\usepackage[style=super, header=none, border=none, number=none, cols=2,
+%						toc=true]{glossary}
+
+%\makeglossary
+
+%
+% Paket für Links innerhalb des PDF Dokuments
+%
+\definecolor{LinkColor}{rgb}{0,0,0}
+\usepackage[
+	pdftitle={RFID Projekt},
+	pdfauthor={Sebastian Wiegand, Erik Soehnel, Steffen Kersten},
+	pdfcreator={Latex},
+	pdfsubject={Zugang per RFID zur FHDW Bibliothek},
+	pdfkeywords={RFID Projekt, }]{hyperref}
+\hypersetup{colorlinks=true,
+	linkcolor=LinkColor,
+	citecolor=LinkColor,
+	filecolor=LinkColor,
+	menucolor=LinkColor,
+	pagecolor=LinkColor,
+	urlcolor=LinkColor}
+
