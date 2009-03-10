@@ -6,7 +6,6 @@
 \subsubsection{Meilensteine}
 
 \begin{itemize}
-\item \textbf{M0} Ergebnis: Vorbereitungen sind getroffen, produktive Arbeit kann beginnen
 \item \textbf{M1} Ergebnis: Hardware ist beschafft, Schnittstellen sind definiert
 \item \textbf{M2} Ergebnis: Ausleihstation funktionstüchtig
 \item \textbf{M3} Ergebnis: Lotus Notes Schnittstelle funktioniert
@@ -17,7 +16,6 @@
 \subsubsection{Arbeitspakete}
 
 \begin{itemize}
-\item \textbf{AP0} Kickoff vorbereiten (eine Woche)
 \item \textbf{AP1} Beschaffung und Test Hardware (eine Woche)
 \item \textbf{AP2} Beschaffung Möbel (eine Woche)
 \item \textbf{AP3} Definition der Schnittstelle Notes $\Leftrightarrow$ Ausleihstation (eine Woche)
@@ -51,16 +49,49 @@ Folgende Kostensätze werden angenommen:
 \end{itemize}
 
 \subsection{Aufwands- und Kostenschätzung}
+\paragraph*{}
+Die Kosten für die Hardware betragen laut Tabelle 5 703,62 Euro. Kosten von 8240 Euro für das Personal ergibt sich aus Tabelle 4. Somit entstehen Gesamtkosten von voraussichtlich 8943,62 Euro.
+
 \begin{table}[h]
 \caption{Aufwands- und Kostenschätzung}
-\begin{tabular}[h]{|p{1cm}|p{4,8cm}|p{4,8cm}|p{2cm}|p{1,5cm}|}
+\begin{tabular}[h]{|p{0,6cm}|p{5cm}|p{4,3cm}|p{2cm}|p{2cm}|}
 \hline
 \textsc{Nr} & \textsc{Aktivität} & \textsc{Rollen} & \textsc{Aufwand} & \textsc{Kosten}\\
 \hline
-1 & blub & blub & blub & 25\\
+1.1 & Hardware beschafft & Hard- und Software & 1 Tag & 8 mal 25 Euro\\
+1.2 & Hardware getestet & Hard- und Software & 1 Tag & 8 mal 25 Euro\\
+1.3 & Schnittstellenanalyse & Hard- und Software & 3 Tage & 24 mal 35 Euro\\
+2.1 & Testaufbau Ausleihstation & Hard- und Software & 1 Tag & 8 mal 25 Euro\\
+2.2 & Programmieren der Ausleihsoftware & Hard- und Software & 8 Tage & 64 mal 35 Euro\\
+2.3 & Abschlusstest der Software & Hard- und Software & 3 Tage & 24 mal 25 Euro\\
+3.1 & Implementation und Test der Lotus Notes Schnittstelle & Ansprechpartner Lotus Notes & 7 Tage & 56 mal 35 Euro\\
+4.1 & Aufbau des Systems/Installation Software & Hard- und Software & 1 Tag & 8 mal 25 Euro\\
+4.2 & Abschlusstest des gesamten Systems & Auftraggeber & 6 Tage & 48 mal 25 Euro\\
+5.1 & Einführung, Übergabe und Schulung & Auftraggeber & 3 Tage & 24 mal 25 Euro\\
 \hline
 \end{tabular}
 \end{table}
 
+\begin{table}
+\caption{Hardware Kosten}
+\rotatebox{270}{
+\begin{tabular}[h]{|p{3cm}|p{3,5cm}|p{2,8cm}|p{2,8cm}|p{8cm}|}
+\hline
+\textsc{Beschreibung} & \textsc{Bezeichnung} & \textsc{Stückpreis} & \textsc{Gesamtpreis} & \textsc{Link zum Hersteller}\\
+\hline
+Kamera & SAFESCAN 282W & 239.00 EUR & 239.00 EUR & \url{http://www.safescan.com/DE/productDetail/46/114/Safescan282W.html}\\
+\hline
+Barcodescanner & Metrologic 3580 Quantum USB schwarz & 297,02 EUR & 297,02 EUR &
+\url{http://barcodescanner.rcf-shop-mall01.de/barcodescanner/metrologic_3580_quantum_usb_schwarz_von_,pd1050!0,,01056_MK3580-31A38.html}\\
+\hline
+Türschloss & Kartenleser Kartenschloss Kemo M068 & 7,80 EUR & 7,80 EUR &
+\url{http://www.luedeke-elektronic.de/products/Elektronik-Module/Sicherheit-Ueberwachung/Kartenleser-Kartenschloss-Kemo-M068.html}\\
+\hline
+Karten für Türschloss & 20x5 Ersatzkarten für Kartenleser Kartenschloss Kemo M068 & 7,99 EUR & 159,80EUR & \url{http://www.luedeke-elektronic.de/products/Elektronik-Module/Sicherheit-Ueberwachung/Kartenleser-Kartenschloss-Kemo-M068.html}\\
+\hline
+\end{tabular}
+}
+\end{table}
+
 \subsection{Risikoplan}
-\subsection{Werkzeuge}
+Der Risikoplan ist in Abbildung 1 dargestellt.
